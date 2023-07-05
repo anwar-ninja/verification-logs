@@ -1,0 +1,200 @@
+{
+  "context": {
+    "domain": "nic2004:52110",
+    "country": "IND",
+    "city": "std:080",
+    "action": "confirm",
+    "core_version": "1.1.0",
+    "bap_id": "buyer-app.ondc.org",
+    "bap_uri": "https://buyer-app.ondc.org/protocol/v1",
+    "bpp_uri": "https://ondc-seller-app.ninjacart.in",
+    "transaction_id": "d61dcb2b-6052-4e82-90e2-2e197978b9ae",
+    "message_id": "1d998af8-90cd-4512-b021-31d9adfd1670",
+    "timestamp": "2023-07-05T09:09:39.664Z",
+    "bpp_id": "ninjacart.in",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "id": "2023-07-05-480683",
+      "state": "Created",
+      "billing": {
+        "address": {
+          "name": "Sandip",
+          "locality": "Bellandur , Bengaluru",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "country": "IND",
+          "area_code": "560024"
+        },
+        "phone": "7374090460",
+        "name": "Sandip",
+        "email": "sandipburnwal800@gmail.com",
+        "created_at": "2023-07-05T09:09:03.589Z",
+        "updated_at": "2023-07-05T09:09:03.589Z"
+      },
+      "items": [
+        {
+          "id": "867f0dc9-5418-456e-b115-669fe6278fe3",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "63a33a86-cc9f-4d07-8a23-ad5f6c87f7d4"
+        },
+        {
+          "id": "5fc2f304-6a98-45f9-8860-d350679be40f",
+          "quantity": {
+            "count": 1
+          },
+          "fulfillment_id": "63a33a86-cc9f-4d07-8a23-ad5f6c87f7d4"
+        }
+      ],
+      "provider": {
+        "id": "1730457",
+        "locations": [
+          {
+            "id": "NC-location-1730457"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "63a33a86-cc9f-4d07-8a23-ad5f6c87f7d4",
+          "tracking": false,
+          "end": {
+            "contact": {
+              "email": "sandipburnwal800@gmail.com",
+              "phone": "7374090460"
+            },
+            "person": {
+              "name": "Sandip"
+            },
+            "location": {
+              "gps": "13.041014, 77.596686",
+              "address": {
+                "name": "Sandip",
+                "building": "",
+                "locality": "Bellandur , Bengaluru",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560024"
+              }
+            }
+          },
+          "type": "Delivery"
+        }
+      ],
+      "payment": {
+        "uri": "https://juspay.in/",
+        "tl_method": "http/get",
+        "params": {
+          "amount": "159.56",
+          "currency": "INR",
+          "transaction_id": "d61dcb2b-6052-4e82-90e2-2e197978b9ae"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "settlement_bank_account_no": "1234567890",
+            "settlement_ifsc_code": "ICIC0001111",
+            "upi_address": "upi@ninjcart.com",
+            "bank_name": "ICICI BANK",
+            "branch_name": "Bellandur branch",
+            "beneficiary_name": "Ninjacart"
+          }
+        ]
+      },
+      "quote": {
+        "price": {
+          "currency": "INR",
+          "value": "159.56"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "867f0dc9-5418-456e-b115-669fe6278fe3",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "5.0"
+              }
+            },
+            "title": "Ginger",
+            "price": {
+              "currency": "INR",
+              "value": "5.0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "867f0dc9-5418-456e-b115-669fe6278fe3",
+            "@ondc/org/title_type": "tax",
+            "title": "Tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "5fc2f304-6a98-45f9-8860-d350679be40f",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "@ondc/org/title_type": "item",
+            "item": {
+              "price": {
+                "currency": "INR",
+                "value": "100.0"
+              }
+            },
+            "title": "Mango amarpalli",
+            "price": {
+              "currency": "INR",
+              "value": "100.0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "5fc2f304-6a98-45f9-8860-d350679be40f",
+            "@ondc/org/title_type": "tax",
+            "title": "Tax",
+            "price": {
+              "currency": "INR",
+              "value": "0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "63a33a86-cc9f-4d07-8a23-ad5f6c87f7d4",
+            "@ondc/org/title_type": "packing",
+            "title": "Packing charges",
+            "price": {
+              "currency": "INR",
+              "value": "5.0"
+            }
+          },
+          {
+            "@ondc/org/item_id": "63a33a86-cc9f-4d07-8a23-ad5f6c87f7d4",
+            "@ondc/org/title_type": "delivery",
+            "title": "Delivery charges",
+            "price": {
+              "currency": "INR",
+              "value": "49.56"
+            }
+          }
+        ],
+        "ttl": "PT30S"
+      },
+      "created_at": "2023-07-05T09:09:39.664Z",
+      "updated_at": "2023-07-05T09:09:39.664Z"
+    }
+  }
+}
